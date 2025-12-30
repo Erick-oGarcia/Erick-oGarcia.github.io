@@ -16,26 +16,51 @@
 
     <nav class="fixed w-full z-50 top-0 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800 shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold text-blue-500 tracking-tighter hover:text-blue-400 transition-colors">EG.</a>
+            <a href="#home" class="text-2xl font-bold text-blue-500 tracking-tighter hover:text-blue-400 transition-colors">Home</a>
             <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm font-medium uppercase tracking-widest text-gray-400">
                 <a href="#impact" class="hover:text-blue-500 transition-colors">Impact</a>
+                <a href="#career" class="hover:text-blue-500 transition-colors">Career</a>
                 <a href="#projects" class="hover:text-blue-500 transition-colors">Projects</a>
                 <a href="#certifications" class="hover:text-blue-500 transition-colors">Certs</a>
             </div>
         </div>
     </nav>
 
-    <header id="home" class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-gradient-to-b from-gray-900 to-black">
-        <h1 class="text-5xl md:text-7xl font-bold text-blue-500 mb-4">Erick Garcia</h1>
-        <h2 class="text-xl md:text-2xl text-gray-400 mb-8 uppercase tracking-widest">QA Engineer | Future SDET | CTFL Certified</h2>
-        <p class="max-w-2xl text-lg text-gray-300 mb-10">
-            Specialist in high-performance test automation at <span class="text-blue-400">TOTVS</span>. 
-            I transform manual testing cycles from days into minutes using Cypress and PL/SQL.
-        </p>
-        <div class="flex space-x-6">
-            <a href="https://github.com/Erick-oGarcia" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub Profile" class="text-3xl hover:text-blue-500 transition-colors"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/erick-garcia-399b2b161/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn Profile" class="text-3xl hover:text-blue-500 transition-colors"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:erick.garcia.qa@gmail.com" aria-label="Send Email" class="text-3xl hover:text-blue-500 transition-colors"><i class="fas fa-envelope"></i></a>
+    <header id="home" class="min-h-screen flex items-center justify-center p-6 bg-gray-900 pt-20">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+            <!-- Left Content -->
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-2">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Erick Garcia</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl text-gray-400 mb-6 font-medium">QA Engineer & SDET</h2>
+                
+                <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+                    Specialist in high-performance test automation at <span class="text-blue-400">TOTVS</span>. 
+                    I transform manual testing cycles from days into minutes using Cypress and PL/SQL.
+                </p>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#" class="px-6 py-3 border border-gray-600 hover:border-gray-400 text-white font-semibold rounded-lg flex items-center gap-2 transition-colors">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="https://github.com/Erick-oGarcia" target="_blank" class="p-3 border border-gray-600 hover:border-gray-400 text-white rounded-lg transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/erick-garcia-399b2b161/" target="_blank" class="p-3 border border-gray-600 hover:border-gray-400 text-white rounded-lg transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="flex-1 flex justify-center md:justify-end relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-900/50 shadow-2xl relative z-10 bg-gray-800">
+                    <img src="https://github.com/Erick-oGarcia.png" alt="Erick Garcia" class="w-full h-full object-cover">
+                </div>
+                <!-- Decorative circle behind -->
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-96 md:h-96 bg-blue-600/20 rounded-full blur-3xl -z-0"></div>
+            </div>
         </div>
     </header>
 
@@ -62,20 +87,158 @@
         </div>
     </section>
 
-    <section id="projects" class="py-20 bg-gray-900 scroll-mt-20">
+    <section id="career" class="py-20 bg-gray-900 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold mb-4 uppercase">Career Journey</h3>
+                <div class="inline-flex items-center bg-gray-800 rounded-full px-4 py-2 border border-gray-700 shadow-lg">
+                    <i class="fas fa-briefcase text-blue-500 mr-2"></i>
+                    <span id="experience-counter" class="text-gray-300 font-mono text-sm">Calculating...</span>
+                </div>
+            </div>
+
+            <div class="relative border-l border-gray-700 ml-4 md:ml-10 space-y-12">
+                
+                <!-- Experience Item -->
+                <div class="relative pl-8 md:pl-12">
+                    <span class="absolute -left-3 top-0 bg-blue-500 h-6 w-6 rounded-full border-4 border-gray-900"></span>
+                    <h4 class="text-xl font-bold text-white">QA Engineer</h4>
+                    <span class="text-blue-400 font-medium">TOTVS</span>
+                    <span class="text-gray-500 text-sm block mb-4">July 2022 - Present</span>
+                    
+                    <div class="space-y-6 text-gray-400">
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">Delivery Management & Manual Testing</h5>
+                            <p class="text-sm leading-relaxed">Conduct manual testing and create validation scenarios in Jira (Zephyr), ensuring full regression battery execution in the validation cycle before each release.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">BDD & Scenario Tracking</h5>
+                            <p class="text-sm leading-relaxed">Use BDD to model scenarios in Gherkin within Jira, inserting complete tracking for each automation scenario and managing automation improvements in the backlog for current and future releases.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">E2E Automation with Cypress</h5>
+                            <p class="text-sm leading-relaxed">Developed 99% of Cypress automations, integrating PL/SQL queries to directly validate data in the Web Cost Table Import project, achieving 100% regression coverage and reducing days of manual validation to minutes.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">Mobile Testing on BrowserStack</h5>
+                            <p class="text-sm leading-relaxed">Performed 100% of manual tests on the 'Minhas Compras' app via BrowserStack, validating critical flows across multiple devices and browsers.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">Data Validation with Firebase & PL/SQL</h5>
+                            <p class="text-sm leading-relaxed">Validated the 'Minhas Compras' app against NoSQL (Firebase) and Oracle PL/SQL databases to ensure data consistency, creating query scripts and validating purchase flows.</p>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">Legacy System Stabilization</h5>
+                            <p class="text-sm leading-relaxed">Developed test scenarios that identified existing bugs, preventing future regressions. Over time, this stabilized the product and allowed for safe implementation of innovations.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h5 class="text-blue-400 font-semibold mb-3 text-xs uppercase tracking-wider">Tools & Technologies</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Cypress</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Page Objects</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">BDD (Gherkin)</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Jira (Zephyr)</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">BrowserStack</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Firebase</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Oracle PL/SQL</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Scrum</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 bg-gray-800/50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <h5 class="text-white font-bold mb-2 text-sm uppercase">Key Results</h5>
+                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                            <li>Over 99% automated validation cases with PL/SQL integration</li>
+                            <li>100% regression coverage in Table Import</li>
+                            <li>Firebase+PL/SQL information validation</li>
+                            <li>Legacy product stabilized, enabling new implementations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Previous Experience Item -->
+                <div class="relative pl-8 md:pl-12">
+                    <span class="absolute -left-3 top-0 bg-gray-600 h-6 w-6 rounded-full border-4 border-gray-900"></span>
+                    <h4 class="text-xl font-bold text-white">QA Intern</h4>
+                    <span class="text-blue-400 font-medium">Prema - PREventive MAintenance Car</span>
+                    <span class="text-gray-500 text-sm block mb-4">Dec 2021 - Jun 2022</span>
+                    
+                    <div class="space-y-6 text-gray-400">
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">Test Strategy & Execution</h5>
+                            <p class="text-sm leading-relaxed">Executed a wide range of testing types including system, exploratory, regression, unit, integration, and beta testing. Applied techniques like combinatorial analysis and boundary value testing to ensure robust coverage.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">Documentation & Metrics</h5>
+                            <p class="text-sm leading-relaxed">Created detailed documentation for test scenarios and established quality metrics to track bug density per screen, improving visibility into application stability.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">Web & API Automation</h5>
+                            <p class="text-sm leading-relaxed">Developed backend automated tests using Mocha and Chai for API assertions, and frontend automation using Cypress. Performed manual API testing using Postman and Insomnia.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">Technical Analysis</h5>
+                            <p class="text-sm leading-relaxed">Utilized Browser DevTools for deep-dive debugging and fault isolation in web applications.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h5 class="text-blue-400 font-semibold mb-3 text-xs uppercase tracking-wider">Tools & Technologies</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Cypress</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Mocha/Chai</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Postman</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">Insomnia</span>
+                            <span class="text-xs font-mono bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">DevTools</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 bg-gray-800/50 p-4 rounded-lg border-l-4 border-gray-500">
+                        <h5 class="text-white font-bold mb-2 text-sm uppercase">Key Results</h5>
+                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                            <li>Implemented automated testing for Frontend (Cypress) and Backend (Mocha/Chai)</li>
+                            <li>Established quality metrics and bug density tracking per screen</li>
+                            <li>Ensured robust coverage through combinatorial and boundary analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-800 scroll-mt-20">
         <div class="container mx-auto px-6">
             <h3 class="text-3xl font-bold mb-12 text-center uppercase">Featured Projects</h3>
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <li class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all group">
                     <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-2xl font-bold text-blue-400">Cypress Web Automation</h4>
-                        <a href="https://github.com/Erick-oGarcia" target="_blank" rel="noopener noreferrer" aria-label="View Cypress Web Automation Project on GitHub" class="text-gray-500 group-hover:text-white"><i class="fas fa-external-link-alt"></i></a>
+                        <h4 class="text-2xl font-bold text-blue-400">Selenium JavaTestMatrix</h4>
+                        <div class="flex gap-4">
+                            <a href="https://erick-ogarcia.github.io/JavaTestMatrix/" target="_blank" rel="noopener noreferrer" aria-label="View Allure Report" class="text-gray-500 group-hover:text-blue-400" title="View Allure Report"><i class="fas fa-chart-bar"></i></a>
+                            <a href="https://github.com/Erick-oGarcia/JavaTestMatrix" target="_blank" rel="noopener noreferrer" aria-label="View Selenium JavaTestMatrix Project on GitHub" class="text-gray-500 group-hover:text-white" title="View Source Code"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-6 text-sm">End-to-end automation framework using Cypress with deep PL/SQL database integration for data consistency validation.</p>
-                    <div class="flex gap-2">
-                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">Cypress</span>
-                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">Oracle SQL</span>
-                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">JavaScript</span>
+                    <p class="text-gray-400 mb-6 text-sm">A robust test automation framework for UI and API, built with Java, Selenium, TestNG, and RestAssured. This project demonstrates a scalable and maintainable architecture using the Page Object Model, interactive reports with Allure, and continuous integration (CI/CD) with GitHub Actions.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">Java</span>
+                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">Selenium</span>
+                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">RestAssured</span>
+                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">TestNG</span>
+                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">GitHub Actions</span>
+                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">Allure reports</span>
+                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">Maven</span>
+                        <span class="text-xs font-mono bg-blue-900/30 text-blue-400 px-2 py-1 rounded">Selenium WebDriver</span>
+
                     </div>
                 </li>
 
@@ -95,25 +258,73 @@
         </div>
     </section>
 
-    <section id="certifications" class="py-20 bg-gray-800 scroll-mt-20">
+    <section id="certifications" class="py-20 bg-gray-900 scroll-mt-20">
         <div class="container mx-auto px-6 text-center">
             <h3 class="text-3xl font-bold mb-12 uppercase">Certifications</h3>
             <div class="flex flex-wrap justify-center gap-8">
                 <div class="flex flex-col items-center">
-                    <img src="https://img.shields.io/badge/ISTQB-CTFL_4.0-E11931?style=for-the-badge&logo=istqb&logoColor=white" alt="ISTQB">
+                    <a href="https://bcr.bstqb.org.br/cert?field_certificado_numero_value=+25-CTFL-13965-BR&field_certificado_nome_value=ERICK+DE+OLIVEIRA+GARCIA" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+                        <img src="https://img.shields.io/badge/ISTQB-CTFL_4.0-E11931?style=for-the-badge&logo=istqb&logoColor=white" alt="ISTQB">
+                    </a>
                     <span class="text-xs text-gray-500 mt-2 italic">Foundation Level Certified</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="https://img.shields.io/badge/Microsoft-Azure_AI-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure AI">
+                    <a href="https://www.credly.com/badges/18f149ec-a747-4208-af8f-9a6290d80486?source=linked_in_profile" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+                        <img src="https://img.shields.io/badge/Microsoft-Azure_AI-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure AI">
+                    </a>
                     <span class="text-xs text-gray-500 mt-2 italic">Azure AI Fundamentals</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="volunteering" class="py-20 bg-gray-800 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12 text-center uppercase">Volunteering</h3>
+            <div class="max-w-4xl mx-auto grid gap-8">
+                <!-- Volunteer Item -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Technical Support</h4>
+                            <span class="text-blue-400 font-medium">Fatec Franca - Faculdade de Tecnologia "Dr. Thomaz Novelino"</span>
+                        </div>
+                        <span class="text-gray-500 text-sm mt-1 md:mt-0">Aug 2018 - Nov 2018</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Voluntary internship assisting in technical support and providing service to professors and students.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="py-10 text-center text-gray-500 border-t border-gray-800 bg-black">
-        <p class="text-sm uppercase tracking-widest">&copy; 2025 Erick Garcia | Quality Engineer</p>
+        <p class="text-sm uppercase tracking-widest">&copy; 2026 Erick Garcia | Quality Engineer</p>
     </footer>
+
+    <script>
+        function updateExperienceCounter() {
+            const startDate = new Date('2021-12-01'); // Start of Prema Internship
+            const currentDate = new Date();
+            
+            let years = currentDate.getFullYear() - startDate.getFullYear();
+            let months = currentDate.getMonth() - startDate.getMonth();
+            
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+            
+            const counterElement = document.getElementById('experience-counter');
+            if (counterElement) {
+                counterElement.textContent = `${years} Years ${months} Months of Experience`;
+            }
+        }
+        
+        // Run immediately and update periodically if page stays open long (optional, but good practice)
+        updateExperienceCounter();
+    </script>
 
 </body>
 </html>
