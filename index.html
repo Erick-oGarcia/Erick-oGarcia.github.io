@@ -3,105 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Erick Garcia - QA Engineer & SDET | Cypress Expert | 99% Test Automation Coverage | Available for Remote International Opportunities">
-    <meta name="keywords" content="QA Engineer, SDET, Test Automation, Cypress, Selenium, Java, Remote QA, International QA Engineer">
-    <meta property="og:title" content="Erick Garcia | QA Engineer & SDET">
-    <meta property="og:description" content="Specialist in high-performance test automation. Transforming manual testing cycles from days into minutes.">
+    <meta name="description" content="Erick Garcia - QA Automation Engineer (SDET) | Cypress, Playwright & TestComplete | 99% Test Automation Coverage">
+    <meta name="keywords" content="QA Automation Engineer, SDET, Test Automation, Cypress, Playwright, TestComplete, Selenium, Java, PL/SQL, Remote QA, International QA Engineer">
+    <meta property="og:title" content="Erick Garcia | QA Automation Engineer & SDET">
+    <meta property="og:description" content="QA Automation Engineer at TOTVS — Cypress, PL/SQL data validation and CI-integrated regression testing.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://github.com/Erick-oGarcia.png">
     <meta property="og:url" content="https://erick-ogarcia.github.io">
-    <title>Erick Garcia | QA Engineer & SDET</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <title>Erick Garcia | QA Automation Engineer & SDET</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230f766e'/><text x='50' y='70' font-family='Georgia,serif' font-size='52' fill='%23ffffff' text-anchor='middle'>EG</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Smooth transitions and custom animations */
-        * {
-            scroll-behavior: smooth;
-        }
-        
-        /* Fade-in animation for sections */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Pulse animation for available badge */
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
-            }
-        }
-        
-        /* Enhanced focus states for accessibility */
+        .serif { font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+
+        /* Accessible focus states */
         a:focus-visible,
         button:focus-visible {
-            outline: 3px solid #0D9488;
+            outline: 2px solid #0f766e;
             outline-offset: 2px;
-            border-radius: 4px;
+            border-radius: 3px;
         }
-        
-        /* Smooth hover transitions */
-        .hover-lift {
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        
-        .hover-lift:hover {
-            transform: translateY(-2px);
-        }
-        
-        /* Card hover effects */
-        section#impact li,
-        section#skills > div > div > div,
-        section#projects > div > div {
-            transition: all 0.3s ease;
-        }
-        
-        /* Link underline effect */
-        .link-underline {
-            position: relative;
-        }
-        
-        .link-underline::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #0D9488;
-            transition: width 0.3s ease;
-        }
-        
-        .link-underline:hover::after {
-            width: 100%;
-        }
-        
-        /* Improved shadows for depth */
-        .shadow-soft {
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-        
-        .shadow-soft-lg {
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-        }
-        
+
         /* High contrast mode support */
         @media (prefers-contrast: high) {
-            * {
-                border-width: 2px !important;
-            }
+            * { border-width: 2px !important; }
         }
-        
+
         /* Reduced motion support */
         @media (prefers-reduced-motion: reduce) {
             * {
@@ -112,299 +40,315 @@
         }
     </style>
 </head>
-<body class="bg-white text-gray-900 font-sans leading-normal tracking-normal">
+<body class="bg-white text-slate-700 font-sans antialiased">
 
-    <nav class="fixed w-full z-50 top-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold text-teal-600 tracking-tighter hover:text-teal-700 transition-colors">Home</a>
-            <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm font-medium uppercase tracking-widest text-gray-600">
-                <a href="#impact" class="hover:text-teal-600 transition-colors">Impact</a>
-                <a href="#skills" class="hover:text-teal-600 transition-colors">Skills</a>
-                <a href="#career" class="hover:text-teal-600 transition-colors">Career</a>
-                <a href="#projects" class="hover:text-teal-600 transition-colors">Projects</a>
-                <a href="#contact" class="hover:text-teal-600 transition-colors">Contact</a>
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-sm border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 md:px-6 py-3 md:py-4 flex flex-wrap justify-between items-center gap-x-4 gap-y-2">
+            <a href="#home" class="serif text-xl font-bold text-slate-900 hover:text-teal-700 transition-colors" data-i18n="nav.home">Home</a>
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-2 md:gap-x-6">
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-1 md:gap-x-7 text-xs md:text-sm text-slate-500">
+                    <a href="#impact" class="hover:text-teal-700 transition-colors" data-i18n="nav.impact">Impact</a>
+                    <a href="#skills" class="hover:text-teal-700 transition-colors" data-i18n="nav.skills">Skills</a>
+                    <a href="#career" class="hover:text-teal-700 transition-colors" data-i18n="nav.career">Career</a>
+                    <a href="#projects" class="hover:text-teal-700 transition-colors" data-i18n="nav.projects">Projects</a>
+                    <a href="#contact" class="hover:text-teal-700 transition-colors" data-i18n="nav.contact">Contact</a>
+                </div>
+                <div class="flex items-center border border-slate-300 rounded-full p-0.5" role="group" aria-label="Language / Idioma">
+                    <button id="lang-pt" type="button" aria-label="Português" class="px-2.5 py-1 rounded-full text-xs font-semibold transition-colors text-slate-500 hover:text-teal-700">PT</button>
+                    <button id="lang-en" type="button" aria-label="English" class="px-2.5 py-1 rounded-full text-xs font-semibold transition-colors text-slate-500 hover:text-teal-700">EN</button>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header id="home" class="min-h-screen flex items-center justify-center p-6 bg-white pt-20">
-        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+    <header id="home" class="min-h-screen flex items-center border-b border-slate-100 px-6 pt-28 pb-16">
+        <div class="max-w-5xl mx-auto w-full grid md:grid-cols-[1.4fr_1fr] items-center gap-12">
             <!-- Left Content -->
-            <div class="flex-1 text-center md:text-left">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-2">
-                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">Erick Garcia</span>
+            <div class="text-center md:text-left order-2 md:order-1">
+                <h1 class="serif text-4xl md:text-5xl text-slate-900 leading-tight mb-3" data-i18n="hero.title">
+                    Hi, I'm <span class="text-teal-700">Erick Garcia</span>
                 </h1>
-                <h2 class="text-xl md:text-2xl text-gray-600 mb-4 font-medium">QA Engineer & SDET</h2>
-                
-                <div class="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-6">
-                    <span class="text-emerald-600 text-sm flex items-center gap-1 font-medium">
-                        <span class="text-xl animate-pulse">●</span> Available for Remote Work
+                <h2 class="text-lg md:text-xl text-slate-500 mb-6 font-medium" data-i18n="hero.role">QA Automation Engineer (SDET)</h2>
+
+                <div class="flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-2 mb-6 text-sm">
+                    <span class="inline-flex items-center gap-2 text-slate-600">
                     </span>
-                    <span class="text-gray-400">|</span>
-                    <span class="text-gray-600 text-sm">🌍 Global Opportunities</span>
                 </div>
-                
-                <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-                    Specialist in high-performance test automation at <span class="text-teal-600 font-semibold">TOTVS</span>. 
-                    I transform manual testing cycles from days into minutes using Cypress and PL/SQL.
+
+                <p class="text-base md:text-lg text-slate-600 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed" data-i18n="hero.intro">
+                    Specialist in test automation at <span class="text-teal-700 font-semibold">TOTVS</span>.
                 </p>
-                
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="assets/docs/Erick_Garcia_QA_Automation_En.pdf" target="_blank" class="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg flex items-center gap-2 transition-all hover:scale-105 shadow-md">
-                        <i class="fas fa-download"></i> Download CV
+
+                <div class="flex flex-wrap justify-center md:justify-start items-center gap-3">
+                    <a href="assets/docs/Erick_Garcia_QA_Automation_En.pdf" target="_blank" class="px-5 py-3 bg-teal-700 hover:bg-teal-800 text-white text-sm font-semibold rounded-md inline-flex items-center gap-2 transition-colors">
+                        <i class="fas fa-download"></i> <span data-i18n="hero.downloadCv">Download CV</span>
                     </a>
-                    <a href="https://github.com/Erick-oGarcia" target="_blank" class="p-3 border-2 border-teal-600 hover:border-teal-700 text-teal-600 hover:text-teal-700 rounded-lg transition-all hover:scale-105">
-                        <i class="fab fa-github text-xl"></i>
+                    <a href="https://github.com/Erick-oGarcia" target="_blank" aria-label="GitHub" class="p-3 border border-slate-300 hover:border-teal-700 text-slate-600 hover:text-teal-700 rounded-md transition-colors">
+                        <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/erick-garcia-399b2b161/" target="_blank" class="p-3 border-2 border-teal-600 hover:border-teal-700 text-teal-600 hover:text-teal-700 rounded-lg transition-all hover:scale-105">
-                        <i class="fab fa-linkedin text-xl"></i>
+                    <a href="https://www.linkedin.com/in/erick-garcia-399b2b161/" target="_blank" aria-label="LinkedIn" class="p-3 border border-slate-300 hover:border-teal-700 text-slate-600 hover:text-teal-700 rounded-md transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:erick.garcia.qa@gmail.com" aria-label="E-mail" class="p-3 border border-slate-300 hover:border-teal-700 text-slate-600 hover:text-teal-700 rounded-md transition-colors">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
 
             <!-- Right Image -->
-            <div class="flex-1 flex justify-center md:justify-end relative">
-                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-teal-500 shadow-2xl relative z-10 bg-gray-100">
+            <div class="flex justify-center md:justify-end order-1 md:order-2">
+                <div class="w-44 h-44 md:w-64 md:h-64 rounded-full overflow-hidden ring-1 ring-slate-200 shadow-sm bg-slate-100">
                     <img src="https://github.com/Erick-oGarcia.png" alt="Erick Garcia" class="w-full h-full object-cover">
                 </div>
-                <!-- Decorative circle behind -->
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-96 md:h-96 bg-teal-100 rounded-full blur-3xl -z-0"></div>
             </div>
         </div>
     </header>
 
-    <section id="impact" class="py-20 bg-gray-50 scroll-mt-20">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold mb-12 uppercase text-gray-900">Key Impact & Results</h3>
-            <ul class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <li class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow border-t-4 border-teal-500">
-                    <i class="fas fa-bolt text-4xl text-teal-600 mb-4"></i>
-                    <h4 class="text-xl font-bold mb-2 text-gray-900">99% Coverage</h4>
-                    <p class="text-gray-600 text-sm">Automated regression for critical Web Cost Table systems.</p>
+    <section id="impact" class="py-20 md:py-24 bg-slate-50 scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <h3 class="serif text-3xl md:text-4xl text-slate-900" data-i18n="impact.title">Key Impact &amp; Results</h3>
+                <div class="mt-4 h-px w-16 bg-teal-700/40 mx-auto"></div>
+            </div>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <li class="p-8 bg-white rounded-lg border border-slate-200">
+                    <i class="fas fa-bolt text-2xl text-teal-700 mb-4"></i>
+                    <h4 class="serif text-2xl font-bold mb-2 text-slate-900" data-i18n="impact.coverage.title">99% Coverage</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed" data-i18n="impact.coverage.desc">Automated regression for critical Web Cost Table systems.</p>
                 </li>
-                <li class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow border-t-4 border-teal-500">
-                    <i class="fas fa-clock text-4xl text-teal-600 mb-4"></i>
-                    <h4 class="text-xl font-bold mb-2 text-gray-900">Efficiency</h4>
-                    <p class="text-gray-600 text-sm">Reduced regression testing from 3 days to 15 minutes (95% time reduction).</p>
+                <li class="p-8 bg-white rounded-lg border border-slate-200">
+                    <i class="fas fa-clock text-2xl text-teal-700 mb-4"></i>
+                    <h4 class="serif text-2xl font-bold mb-2 text-slate-900" data-i18n="impact.efficiency.title">Efficiency</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed" data-i18n="impact.efficiency.desc">Reduced regression testing from 3 days to 15 minutes (95% time reduction).</p>
                 </li>
-                <li class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow border-t-4 border-teal-500">
-                    <i class="fas fa-database text-4xl text-teal-600 mb-4"></i>
-                    <h4 class="text-xl font-bold mb-2 text-gray-900">Full-Stack Testing</h4>
-                    <p class="text-gray-600 text-sm">Database validation with PL/SQL integrated into E2E tests.</p>
+                <li class="p-8 bg-white rounded-lg border border-slate-200">
+                    <i class="fas fa-database text-2xl text-teal-700 mb-4"></i>
+                    <h4 class="serif text-2xl font-bold mb-2 text-slate-900" data-i18n="impact.fullstack.title">Full-Stack Testing</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed" data-i18n="impact.fullstack.desc">Database validation with PL/SQL integrated into E2E tests.</p>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section id="skills" class="py-20 bg-white scroll-mt-20">
-        <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-bold mb-12 text-center uppercase text-gray-900">Technical Skills</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                
+    <section id="skills" class="py-20 md:py-24 bg-white scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <h3 class="serif text-3xl md:text-4xl text-slate-900" data-i18n="skills.title">Technical Skills</h3>
+                <div class="mt-4 h-px w-16 bg-teal-700/40 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
                 <!-- Test Automation -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-teal-500 hover:shadow-lg transition-all">
-                    <h4 class="text-teal-600 font-bold mb-4 flex items-center gap-2">
-                        <i class="fas fa-robot"></i> Test Automation
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h4 class="text-slate-900 font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-robot text-teal-700"></i> <span data-i18n="skills.automation.title">Test Automation</span>
                     </h4>
                     <div class="space-y-2 text-sm">
-                        <p class="text-gray-700"><span class="text-gray-500">E2E:</span> Cypress, Selenium WebDriver, TestNG</p>
-                        <p class="text-gray-700"><span class="text-gray-500">API:</span> RestAssured, Postman, Insomnia</p>
-                        <p class="text-gray-700"><span class="text-gray-500">Frameworks:</span> Mocha/Chai, Page Object Model</p>
-                        <p class="text-gray-700"><span class="text-gray-500">BDD:</span> Gherkin, Cucumber</p>
+                        <p class="text-slate-600"><span class="text-slate-400">Web E2E:</span> Cypress, Playwright, Selenium</p>
+                        <p class="text-slate-600"><span class="text-slate-400">Desktop / ERP:</span> TestComplete</p>
+                        <p class="text-slate-600"><span class="text-slate-400">API:</span> Postman, Swagger, RestAssured</p>
+                        <p class="text-slate-600"><span class="text-slate-400">BDD &amp; Patterns:</span> Gherkin, Cucumber, Page Object Model</p>
                     </div>
                 </div>
 
                 <!-- Programming Languages -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-teal-500 hover:shadow-lg transition-all">
-                    <h4 class="text-teal-600 font-bold mb-4 flex items-center gap-2">
-                        <i class="fas fa-code"></i> Programming Languages
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h4 class="text-slate-900 font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-code text-teal-700"></i> <span data-i18n="skills.languages.title">Programming Languages</span>
                     </h4>
                     <div class="space-y-2 text-sm">
-                        <p class="text-gray-700">JavaScript/TypeScript <span class="text-emerald-600 text-xs font-semibold">(Proficient)</span></p>
-                        <p class="text-gray-700">Java <span class="text-teal-600 text-xs font-semibold">(Intermediate/Advanced)</span></p>
-                        <p class="text-gray-700">SQL/PL-SQL <span class="text-emerald-600 text-xs font-semibold">(Advanced)</span></p>
+                        <p class="text-slate-600" data-i18n="skills.languages.js">JavaScript/TypeScript <span class="text-slate-400 text-xs">(Proficient)</span></p>
+                        <p class="text-slate-600" data-i18n="skills.languages.java">Java <span class="text-slate-400 text-xs">(Intermediate/Advanced)</span></p>
+                        <p class="text-slate-600" data-i18n="skills.languages.sql">SQL/PL-SQL <span class="text-slate-400 text-xs">(Advanced)</span></p>
                     </div>
                 </div>
 
                 <!-- Databases & Backend -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-teal-500 hover:shadow-lg transition-all">
-                    <h4 class="text-teal-600 font-bold mb-4 flex items-center gap-2">
-                        <i class="fas fa-database"></i> Databases & Backend
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h4 class="text-slate-900 font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-database text-teal-700"></i> <span data-i18n="skills.db.title">Databases &amp; Backend</span>
                     </h4>
                     <div class="space-y-2 text-sm">
-                        <p class="text-gray-700">Oracle PL/SQL</p>
-                        <p class="text-gray-700">Firebase (NoSQL)</p>
-                        <p class="text-gray-700">Data validation & query optimization</p>
+                        <p class="text-slate-600">Oracle PL/SQL</p>
+                        <p class="text-slate-600">Firebase (NoSQL)</p>
+                        <p class="text-slate-600" data-i18n="skills.db.validation">Data validation &amp; query optimization</p>
                     </div>
                 </div>
 
                 <!-- CI/CD & DevOps -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-teal-500 hover:shadow-lg transition-all">
-                    <h4 class="text-teal-600 font-bold mb-4 flex items-center gap-2">
-                        <i class="fas fa-cogs"></i> CI/CD & DevOps
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h4 class="text-slate-900 font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-cogs text-teal-700"></i> CI/CD &amp; DevOps
                     </h4>
                     <div class="space-y-2 text-sm">
-                        <p class="text-gray-700">GitHub Actions</p>
-                        <p class="text-gray-700">Maven</p>
-                        <p class="text-gray-700">Allure Reports</p>
-                        <p class="text-gray-700">BrowserStack</p>
+                        <p class="text-slate-600">GitHub Actions</p>
+                        <p class="text-slate-600">Azure DevOps</p>
+                        <p class="text-slate-600">Maven</p>
+                        <p class="text-slate-600">Allure Reports</p>
+                        <p class="text-slate-600">BrowserStack</p>
                     </div>
                 </div>
 
                 <!-- Methodologies -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-teal-500 hover:shadow-lg transition-all">
-                    <h4 class="text-teal-600 font-bold mb-4 flex items-center gap-2">
-                        <i class="fas fa-project-diagram"></i> Methodologies
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h4 class="text-slate-900 font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-project-diagram text-teal-700"></i> <span data-i18n="skills.method.title">Methodologies</span>
                     </h4>
                     <div class="space-y-2 text-sm">
-                        <p class="text-gray-700">Scrum/Agile</p>
-                        <p class="text-gray-700">BDD (Behavior-Driven Development)</p>
-                        <p class="text-gray-700">Test Strategy Design</p>
-                        <p class="text-gray-700">Exploratory Testing</p>
+                        <p class="text-slate-600" data-i18n="skills.method.scrum">Scrum/Agile</p>
+                        <p class="text-slate-600">BDD (Behavior-Driven Development)</p>
+                        <p class="text-slate-600" data-i18n="skills.method.strategy">Test Strategy Design</p>
+                        <p class="text-slate-600" data-i18n="skills.method.exploratory">Exploratory Testing</p>
                     </div>
                 </div>
 
                 <!-- Specializations -->
-                <div class="bg-gradient-to-br from-teal-50 to-cyan-50 p-6 rounded-lg border border-teal-300 hover:border-teal-500 hover:shadow-lg transition-all">
-                    <h4 class="text-teal-700 font-bold mb-4 flex items-center gap-2">
-                        <i class="fas fa-star"></i> Specializations
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <h4 class="text-slate-900 font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-star text-teal-700"></i> <span data-i18n="skills.spec.title">Specializations</span>
                     </h4>
                     <div class="space-y-2 text-sm">
-                        <p class="text-gray-800 font-medium">🎯 Database Test Automation (PL/SQL + Cypress)</p>
-                        <p class="text-gray-800 font-medium">⚡ High-Coverage E2E Testing</p>
-                        <p class="text-gray-800 font-medium">🔄 Legacy System Stabilization</p>
+                        <p class="text-slate-700" data-i18n="skills.spec.db">Database Test Automation (PL/SQL + Cypress)</p>
+                        <p class="text-slate-700" data-i18n="skills.spec.e2e">High-Coverage E2E Testing</p>
+                        <p class="text-slate-700" data-i18n="skills.spec.legacy">Legacy System Stabilization</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="career" class="py-20 bg-gray-50 scroll-mt-20">
-        <div class="container mx-auto px-6">
+    <section id="career" class="py-20 md:py-24 bg-slate-50 scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-6">
             <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold mb-4 uppercase text-gray-900">Career Journey</h3>
-                <div class="inline-flex items-center bg-white rounded-full px-4 py-2 border border-gray-200 shadow-md">
-                    <i class="fas fa-briefcase text-teal-600 mr-2"></i>
-                    <span id="experience-counter" class="text-gray-700 font-mono text-sm">Calculating...</span>
+                <h3 class="serif text-3xl md:text-4xl text-slate-900" data-i18n="career.title">Career Journey</h3>
+                <div class="mt-4 mb-6 h-px w-16 bg-teal-700/40 mx-auto"></div>
+                <div class="inline-flex items-center bg-white rounded-full px-4 py-2 border border-slate-200">
+                    <i class="fas fa-briefcase text-teal-700 mr-2 text-sm"></i>
+                    <span id="experience-counter" class="text-slate-600 font-mono text-sm">Calculating...</span>
                 </div>
             </div>
 
-            <div class="relative border-l border-gray-300 ml-4 md:ml-10 space-y-12">
-                
+            <div class="relative border-l border-slate-300 ml-3 md:ml-6 space-y-12 max-w-3xl">
+
                 <!-- Experience Item -->
-                <div class="relative pl-8 md:pl-12">
-                    <span class="absolute -left-3 top-0 bg-teal-600 h-6 w-6 rounded-full border-4 border-gray-50"></span>
-                    <div class="flex items-center gap-2 mb-1">
-                        <h4 class="text-xl font-bold text-gray-900">QA Engineer</h4>
-                        <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded font-semibold">CURRENT ROLE</span>
+                <div class="relative pl-8 md:pl-10">
+                    <span class="absolute -left-[7px] top-1.5 bg-teal-700 h-3.5 w-3.5 rounded-full ring-4 ring-slate-50"></span>
+                    <div class="flex flex-wrap items-center gap-2 mb-1">
+                        <h4 class="text-xl font-bold text-slate-900" data-i18n="career.totvs.role">QA Engineer</h4>
+                        <span class="text-xs bg-teal-50 text-teal-800 px-2 py-0.5 rounded font-semibold border border-teal-100" data-i18n="career.totvs.badge">CURRENT ROLE</span>
                     </div>
-                    <span class="text-teal-600 font-semibold">TOTVS</span>
-                    <span class="text-gray-500 text-sm block mb-4">July 2022 - Present</span>
-                    
-                    <div class="space-y-6 text-gray-600">
+                    <span class="text-teal-700 font-semibold">TOTVS</span>
+                    <span class="text-slate-500 text-sm block" data-i18n="career.totvs.context">Retail &amp; Supermarket ERP – Consinco product line</span>
+                    <span class="text-slate-400 text-sm block mb-4" data-i18n="career.totvs.period">July 2022 - Present</span>
+
+                    <div class="space-y-5 text-slate-600">
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">Delivery Management & Manual Testing</h5>
-                            <p class="text-sm leading-relaxed">Conduct manual testing and create validation scenarios in Jira (Zephyr), ensuring full regression battery execution in the validation cycle before each release.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.totvs.i1.title">Delivery Management &amp; Manual Testing</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.totvs.i1.desc">Conduct manual testing and create validation scenarios in Jira (Zephyr), ensuring full regression battery execution in the validation cycle before each release.</p>
                         </div>
 
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">BDD & Scenario Tracking</h5>
-                            <p class="text-sm leading-relaxed">Use BDD to model scenarios in Gherkin within Jira, inserting complete tracking for each automation scenario and managing automation improvements in the backlog for current and future releases.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.totvs.i2.title">BDD &amp; Scenario Tracking</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.totvs.i2.desc">Use BDD to model scenarios in Gherkin within Jira, inserting complete tracking for each automation scenario and managing automation improvements in the backlog for current and future releases.</p>
                         </div>
 
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">E2E Automation with Cypress</h5>
-                            <p class="text-sm leading-relaxed">Developed 99% of Cypress automations, integrating PL/SQL queries to directly validate data in the Web Cost Table Import project, achieving 100% regression coverage and reducing days of manual validation to minutes.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.totvs.i3.title">E2E Automation with Cypress</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.totvs.i3.desc">Developed 99% of Cypress automations, integrating PL/SQL queries to directly validate data in the Web Cost Table Import project, achieving 100% regression coverage and reducing days of manual validation to minutes.</p>
                         </div>
 
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">Mobile Testing on BrowserStack</h5>
-                            <p class="text-sm leading-relaxed">Performed 100% of manual tests on the 'Minhas Compras' app via BrowserStack, validating critical flows across multiple devices and browsers.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.totvs.i4.title">Mobile Testing on BrowserStack</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.totvs.i4.desc">Performed 100% of manual tests on the 'Minhas Compras' app via BrowserStack, validating critical flows across multiple devices and browsers.</p>
                         </div>
 
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">Data Validation with Firebase & PL/SQL</h5>
-                            <p class="text-sm leading-relaxed">Validated the 'Minhas Compras' app against NoSQL (Firebase) and Oracle PL/SQL databases to ensure data consistency, creating query scripts and validating purchase flows.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.totvs.i5.title">Data Validation with Firebase &amp; PL/SQL</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.totvs.i5.desc">Validated the 'Minhas Compras' app against NoSQL (Firebase) and Oracle PL/SQL databases to ensure data consistency, creating query scripts and validating purchase flows.</p>
                         </div>
-                        
+
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">Legacy System Stabilization</h5>
-                            <p class="text-sm leading-relaxed">Developed test scenarios that identified existing bugs, preventing future regressions. Over time, this stabilized the product and allowed for safe implementation of innovations.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.totvs.i6.title">Legacy System Stabilization</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.totvs.i6.desc">Developed test scenarios that identified existing bugs, preventing future regressions. Over time, this stabilized the product and allowed for safe implementation of innovations.</p>
                         </div>
                     </div>
 
                     <div class="mt-6">
-                        <h5 class="text-teal-600 font-semibold mb-3 text-xs uppercase tracking-wider">Tools & Technologies</h5>
+                        <h5 class="text-slate-400 font-semibold mb-3 text-xs uppercase tracking-wider" data-i18n="career.tools">Tools &amp; Technologies</h5>
                         <div class="flex flex-wrap gap-2">
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Cypress</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Page Objects</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">BDD (Gherkin)</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Jira (Zephyr)</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">BrowserStack</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Firebase</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Oracle PL/SQL</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Scrum</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Cypress</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Playwright</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">TestComplete</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Page Objects</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">BDD (Gherkin)</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Jira (Zephyr)</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">BrowserStack</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Firebase</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Oracle PL/SQL</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">GitHub Actions</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Azure DevOps</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Scrum</span>
                         </div>
                     </div>
 
-                    <div class="mt-6 bg-teal-50 p-4 rounded-lg border-l-4 border-teal-500">
-                        <h5 class="text-gray-900 font-bold mb-2 text-sm uppercase">Key Results</h5>
-                        <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
-                            <li>Over 99% automated validation cases with PL/SQL integration (180+ test scenarios)</li>
-                            <li>Reduced release testing cycle from 3 days to 15 minutes</li>
-                            <li>100% regression coverage in Table Import</li>
-                            <li>Firebase+PL/SQL information validation</li>
-                            <li>Legacy product stabilized, enabling new implementations</li>
+                    <div class="mt-6 bg-white p-4 rounded-lg border-l-2 border-teal-700 border-y border-r border-slate-200">
+                        <h5 class="text-slate-900 font-semibold mb-2 text-xs uppercase tracking-wider" data-i18n="career.results">Key Results</h5>
+                        <ul class="list-disc list-outside ml-4 text-slate-600 text-sm space-y-1">
+                            <li data-i18n="career.totvs.r1">Over 99% automated validation cases with PL/SQL integration (180+ test scenarios)</li>
+                            <li data-i18n="career.totvs.r2">Reduced release testing cycle from 3 days to 15 minutes</li>
+                            <li data-i18n="career.totvs.r3">100% regression coverage in Table Import</li>
+                            <li data-i18n="career.totvs.r4">Firebase+PL/SQL information validation</li>
+                            <li data-i18n="career.totvs.r5">Legacy product stabilized, enabling new implementations</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Previous Experience Item -->
-                <div class="relative pl-8 md:pl-12">
-                    <span class="absolute -left-3 top-0 bg-gray-400 h-6 w-6 rounded-full border-4 border-gray-50"></span>
-                    <h4 class="text-xl font-bold text-gray-900">QA Intern</h4>
-                    <span class="text-teal-600 font-semibold">Prema - PREventive MAintenance Car</span>
-                    <span class="text-gray-500 text-sm block mb-4">Dec 2021 - Jun 2022</span>
-                    
-                    <div class="space-y-6 text-gray-600">
+                <div class="relative pl-8 md:pl-10">
+                    <span class="absolute -left-[7px] top-1.5 bg-slate-400 h-3.5 w-3.5 rounded-full ring-4 ring-slate-50"></span>
+                    <h4 class="text-xl font-bold text-slate-900" data-i18n="career.prema.role">QA Intern</h4>
+                    <span class="text-teal-700 font-semibold">Prema - PREventive MAintenance Car</span>
+                    <span class="text-slate-400 text-sm block mb-4" data-i18n="career.prema.period">Dec 2021 - Jun 2022</span>
+
+                    <div class="space-y-5 text-slate-600">
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">Test Strategy & Execution</h5>
-                            <p class="text-sm leading-relaxed">Executed a wide range of testing types including system, exploratory, regression, unit, integration, and beta testing. Applied techniques like combinatorial analysis and boundary value testing to ensure robust coverage.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.prema.i1.title">Test Strategy &amp; Execution</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.prema.i1.desc">Executed a wide range of testing types including system, exploratory, regression, unit, integration, and beta testing. Applied techniques like combinatorial analysis and boundary value testing to ensure robust coverage.</p>
                         </div>
 
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">Documentation & Metrics</h5>
-                            <p class="text-sm leading-relaxed">Created detailed documentation for test scenarios and established quality metrics to track bug density per screen, improving visibility into application stability.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.prema.i2.title">Documentation &amp; Metrics</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.prema.i2.desc">Created detailed documentation for test scenarios and established quality metrics to track bug density per screen, improving visibility into application stability.</p>
                         </div>
 
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">Web & API Automation</h5>
-                            <p class="text-sm leading-relaxed">Developed backend automated tests using Mocha and Chai for API assertions, and frontend automation using Cypress. Performed manual API testing using Postman and Insomnia.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.prema.i3.title">Web &amp; API Automation</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.prema.i3.desc">Developed backend automated tests using Mocha and Chai for API assertions, and frontend automation using Cypress. Performed manual API testing using Postman and Insomnia.</p>
                         </div>
 
                         <div>
-                            <h5 class="text-gray-900 font-semibold mb-1">Technical Analysis</h5>
-                            <p class="text-sm leading-relaxed">Utilized Browser DevTools for deep-dive debugging and fault isolation in web applications.</p>
+                            <h5 class="text-slate-900 font-semibold mb-1 text-sm" data-i18n="career.prema.i4.title">Technical Analysis</h5>
+                            <p class="text-sm leading-relaxed" data-i18n="career.prema.i4.desc">Utilized Browser DevTools for deep-dive debugging and fault isolation in web applications.</p>
                         </div>
                     </div>
 
                     <div class="mt-6">
-                        <h5 class="text-teal-600 font-semibold mb-3 text-xs uppercase tracking-wider">Tools & Technologies</h5>
+                        <h5 class="text-slate-400 font-semibold mb-3 text-xs uppercase tracking-wider" data-i18n="career.tools2">Tools &amp; Technologies</h5>
                         <div class="flex flex-wrap gap-2">
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Cypress</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Mocha/Chai</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Postman</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">Insomnia</span>
-                            <span class="text-xs font-mono bg-gray-100 text-gray-700 px-2 py-1 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">DevTools</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Cypress</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Mocha/Chai</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Postman</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">Insomnia</span>
+                            <span class="text-xs font-mono bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded">DevTools</span>
                         </div>
                     </div>
 
-                    <div class="mt-6 bg-gray-100 p-4 rounded-lg border-l-4 border-gray-400">
-                        <h5 class="text-gray-900 font-bold mb-2 text-sm uppercase">Key Results</h5>
-                        <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
-                            <li>Implemented automated testing for Frontend (Cypress) and Backend (Mocha/Chai)</li>
-                            <li>Established quality metrics and bug density tracking per screen</li>
-                            <li>Ensured robust coverage through combinatorial and boundary analysis</li>
+                    <div class="mt-6 bg-white p-4 rounded-lg border-l-2 border-slate-300 border-y border-r border-slate-200">
+                        <h5 class="text-slate-900 font-semibold mb-2 text-xs uppercase tracking-wider" data-i18n="career.results2">Key Results</h5>
+                        <ul class="list-disc list-outside ml-4 text-slate-600 text-sm space-y-1">
+                            <li data-i18n="career.prema.r1">Implemented automated testing for Frontend (Cypress) and Backend (Mocha/Chai)</li>
+                            <li data-i18n="career.prema.r2">Established quality metrics and bug density tracking per screen</li>
+                            <li data-i18n="career.prema.r3">Ensured robust coverage through combinatorial and boundary analysis</li>
                         </ul>
                     </div>
                 </div>
@@ -412,45 +356,48 @@
         </div>
     </section>
 
-    <section id="projects" class="py-20 bg-white scroll-mt-20">
-        <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-bold mb-12 text-center uppercase text-gray-900">Featured Projects</h3>
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-teal-500 hover:shadow-xl transition-all group">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-2xl font-bold text-teal-600">Selenium JavaTestMatrix</h4>
-                        <div class="flex gap-4">
-                            <a href="https://erick-ogarcia.github.io/JavaTestMatrix/" target="_blank" rel="noopener noreferrer" aria-label="View Allure Report" class="text-gray-400 group-hover:text-teal-600 transition-colors" title="View Allure Report"><i class="fas fa-chart-bar text-xl"></i></a>
-                            <a href="https://github.com/Erick-oGarcia/JavaTestMatrix" target="_blank" rel="noopener noreferrer" aria-label="View Selenium JavaTestMatrix Project on GitHub" class="text-gray-400 group-hover:text-gray-900 transition-colors" title="View Source Code"><i class="fab fa-github text-xl"></i></a>
+    <section id="projects" class="py-20 md:py-24 bg-white scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <h3 class="serif text-3xl md:text-4xl text-slate-900" data-i18n="projects.title">Featured Projects</h3>
+                <div class="mt-4 h-px w-16 bg-teal-700/40 mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white p-6 md:p-8 rounded-lg border border-slate-200">
+                    <div class="flex justify-between items-start mb-4 gap-4">
+                        <h4 class="serif text-xl md:text-2xl font-bold text-slate-900">Selenium JavaTestMatrix</h4>
+                        <div class="flex gap-4 text-slate-400 shrink-0 pt-1">
+                            <a href="https://erick-ogarcia.github.io/JavaTestMatrix/" target="_blank" rel="noopener noreferrer" aria-label="View Allure Report" data-i18n-label="projects.jtm.allure" class="hover:text-teal-700 transition-colors" title="View Allure Report"><i class="fas fa-chart-bar"></i></a>
+                            <a href="https://github.com/Erick-oGarcia/JavaTestMatrix" target="_blank" rel="noopener noreferrer" aria-label="View Source Code on GitHub" data-i18n-label="projects.jtm.source" class="hover:text-slate-900 transition-colors" title="View Source Code on GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">A robust test automation framework for UI and API testing, built with Java, Selenium, TestNG, and RestAssured. This project demonstrates a scalable and maintainable architecture using the Page Object Model pattern, interactive reports with Allure, and continuous integration (CI/CD) with GitHub Actions.</p>
-                    
-                    <div class="mb-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
-                        <h5 class="text-gray-900 font-semibold mb-2 text-sm">Key Features:</h5>
-                        <ul class="text-gray-600 text-xs space-y-1 list-disc list-inside">
-                            <li>Automated UI testing with Selenium WebDriver and Page Object Model</li>
-                            <li>API testing with RestAssured for contract validation</li>
-                            <li>Comprehensive test reports with Allure integration</li>
-                            <li>CI/CD pipeline with GitHub Actions for continuous testing</li>
-                            <li>Data-driven testing with TestNG parameters</li>
+                    <p class="text-slate-600 mb-5 text-sm leading-relaxed" data-i18n="projects.jtm.desc">A robust test automation framework for UI and API testing, built with Java, Selenium, TestNG, and RestAssured. This project demonstrates a scalable and maintainable architecture using the Page Object Model pattern, interactive reports with Allure, and continuous integration (CI/CD) with GitHub Actions.</p>
+
+                    <div class="mb-5 p-4 bg-slate-50 rounded-lg border border-slate-200">
+                        <h5 class="text-slate-900 font-semibold mb-2 text-sm" data-i18n="projects.jtm.features">Key Features:</h5>
+                        <ul class="text-slate-600 text-xs space-y-1 list-disc list-outside ml-4">
+                            <li data-i18n="projects.jtm.f1">Automated UI testing with Selenium WebDriver and Page Object Model</li>
+                            <li data-i18n="projects.jtm.f2">API testing with RestAssured for contract validation</li>
+                            <li data-i18n="projects.jtm.f3">Comprehensive test reports with Allure integration</li>
+                            <li data-i18n="projects.jtm.f4">CI/CD pipeline with GitHub Actions for continuous testing</li>
+                            <li data-i18n="projects.jtm.f5">Data-driven testing with TestNG parameters</li>
                         </ul>
                     </div>
-                    
+
                     <div class="flex flex-wrap gap-2">
-                        <span class="text-xs font-mono bg-teal-50 text-teal-700 px-2 py-1 rounded">Java</span>
-                        <span class="text-xs font-mono bg-teal-50 text-teal-700 px-2 py-1 rounded">Selenium WebDriver</span>
-                        <span class="text-xs font-mono bg-teal-50 text-teal-700 px-2 py-1 rounded">RestAssured</span>
-                        <span class="text-xs font-mono bg-teal-50 text-teal-700 px-2 py-1 rounded">TestNG</span>
-                        <span class="text-xs font-mono bg-teal-50 text-teal-700 px-2 py-1 rounded">GitHub Actions</span>
-                        <span class="text-xs font-mono bg-teal-50 text-teal-700 px-2 py-1 rounded">Allure Reports</span>
-                        <span class="text-xs font-mono bg-teal-50 text-teal-700 px-2 py-1 rounded">Maven</span>
-                        <span class="text-xs font-mono bg-teal-50 text-teal-700 px-2 py-1 rounded">Page Object Model</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Java</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Selenium WebDriver</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">RestAssured</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">TestNG</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">GitHub Actions</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Allure Reports</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Maven</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Page Object Model</span>
                     </div>
                 </div>
-                
-                <p class="text-center text-gray-500 text-sm mt-8">
-                    <a href="https://github.com/Erick-oGarcia" target="_blank" class="hover:text-teal-600 transition-colors font-medium">
+
+                <p class="text-center text-slate-500 text-sm mt-8">
+                    <a href="https://github.com/Erick-oGarcia" target="_blank" class="hover:text-teal-700 transition-colors font-medium" data-i18n="projects.more">
                         More projects available on my GitHub <i class="fab fa-github"></i>
                     </a>
                 </p>
@@ -458,108 +405,141 @@
         </div>
     </section>
 
-    <section id="certifications" class="py-20 bg-gray-50 scroll-mt-20">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold mb-12 uppercase text-gray-900">Certifications</h3>
-            <div class="flex flex-wrap justify-center gap-8">
-                <div class="flex flex-col items-center">
-                    <a href="https://bcr.bstqb.org.br/cert?field_certificado_numero_value=+25-CTFL-13965-BR&field_certificado_nome_value=ERICK+DE+OLIVEIRA+GARCIA" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
-                        <img src="https://img.shields.io/badge/ISTQB-CTFL_4.0-E11931?style=for-the-badge&logo=istqb&logoColor=white" alt="ISTQB">
-                    </a>
-                    <span class="text-xs text-gray-600 mt-2 italic">Foundation Level Certified | Valid Since 2025</span>
+    <section id="certifications" class="py-20 md:py-24 bg-slate-50 scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <h3 class="serif text-3xl md:text-4xl text-slate-900" data-i18n="certs.title">Certifications</h3>
+                <div class="mt-4 h-px w-16 bg-teal-700/40 mx-auto"></div>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2 max-w-3xl mx-auto">
+                <div class="flex items-start gap-3 bg-white border border-slate-200 rounded-lg p-5">
+                    <i class="fas fa-certificate text-teal-700 mt-0.5"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-900 text-sm">
+                            <a href="https://bcr.bstqb.org.br/cert?field_certificado_numero_value=+25-CTFL-13965-BR&field_certificado_nome_value=ERICK+DE+OLIVEIRA+GARCIA" target="_blank" rel="noopener noreferrer" class="hover:text-teal-700 transition-colors">ISTQB — Foundation Level (CTFL 4.0) <i class="fas fa-arrow-up-right-from-square text-[10px] text-slate-400"></i></a>
+                        </h4>
+                        <p class="text-xs text-slate-500 mt-1" data-i18n="certs.istqb">Foundation Level Certified | Valid Since 2025</p>
+                    </div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <a href="https://www.credly.com/badges/18f149ec-a747-4208-af8f-9a6290d80486?source=linked_in_profile" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
-                        <img src="https://img.shields.io/badge/Microsoft-Azure_AI-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure AI">
-                    </a>
-                    <span class="text-xs text-gray-600 mt-2 italic">Azure AI Fundamentals</span>
+                <div class="flex items-start gap-3 bg-white border border-slate-200 rounded-lg p-5">
+                    <i class="fab fa-microsoft text-teal-700 mt-0.5"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-900 text-sm">
+                            <a href="https://www.credly.com/badges/18f149ec-a747-4208-af8f-9a6290d80486?source=linked_in_profile" target="_blank" rel="noopener noreferrer" class="hover:text-teal-700 transition-colors">Microsoft Azure AI Fundamentals <i class="fas fa-arrow-up-right-from-square text-[10px] text-slate-400"></i></a>
+                        </h4>
+                        <p class="text-xs text-slate-500 mt-1">AI-900</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-white border border-slate-200 rounded-lg p-5">
+                    <i class="fas fa-check-circle text-teal-700 mt-0.5"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-900 text-sm" data-i18n="certs.isq">Introduction to Software Quality</h4>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-white border border-slate-200 rounded-lg p-5">
+                    <i class="fas fa-vial text-teal-700 mt-0.5"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-900 text-sm">Cypress Discovery</h4>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-white border border-slate-200 rounded-lg p-5">
+                    <i class="fas fa-gauge-high text-teal-700 mt-0.5"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-900 text-sm">JMeter</h4>
+                        <p class="text-xs text-slate-500 mt-1" data-i18n="certs.jmeter">Performance Testing</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="languages" class="py-20 bg-white scroll-mt-20">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold mb-12 uppercase text-gray-900">Languages</h3>
-            <div class="flex justify-center gap-12 flex-wrap">
-                <div class="text-center">
-                    <div class="text-6xl mb-3">🇺🇸</div>
-                    <h4 class="font-bold text-gray-900 text-xl mb-1">English</h4>
-                    <p class="text-teal-600 text-base font-semibold mb-1">Advanced</p>
-                    <p class="text-gray-500 text-sm">Professional Working Proficiency</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-6xl mb-3">🇧🇷</div>
-                    <h4 class="font-bold text-gray-900 text-xl mb-1">Portuguese</h4>
-                    <p class="text-teal-600 text-base font-semibold mb-1">Native</p>
-                    <p class="text-gray-500 text-sm">First Language</p>
+    <section id="education" class="py-20 md:py-24 bg-white scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <h3 class="serif text-3xl md:text-4xl text-slate-900" data-i18n="edu.title">Education</h3>
+                <div class="mt-4 h-px w-16 bg-teal-700/40 mx-auto"></div>
+            </div>
+            <div class="max-w-2xl mx-auto flex items-start gap-4 p-6 bg-white rounded-lg border border-slate-200">
+                <i class="fas fa-graduation-cap text-2xl text-teal-700 mt-1"></i>
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-1" data-i18n="edu.degree">Bachelor's Degree in Information Systems</h4>
+                    <p class="text-teal-700 font-medium text-sm mb-1" data-i18n="edu.school">FATEC Franca – College of Technology "Dr. Thomaz Novelino"</p>
+                    <p class="text-slate-400 text-sm">2018 – 2022</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-gray-50 scroll-mt-20">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold mb-8 uppercase text-gray-900">Get In Touch</h3>
-            <p class="text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-                I'm currently open to remote QA/SDET opportunities worldwide. 
+    <section id="languages" class="py-20 md:py-24 bg-slate-50 scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <h3 class="serif text-3xl md:text-4xl text-slate-900" data-i18n="languages.title">Languages</h3>
+                <div class="mt-4 h-px w-16 bg-teal-700/40 mx-auto"></div>
+            </div>
+            <div class="flex justify-center gap-6 flex-wrap max-w-2xl mx-auto">
+                <div class="flex-1 min-w-[220px] text-center bg-white border border-slate-200 rounded-lg p-6">
+                    <div class="text-4xl mb-3">🇺🇸</div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-1" data-i18n="languages.en.name">English</h4>
+                    <p class="text-teal-700 text-sm font-semibold mb-1" data-i18n="languages.en.level">Advanced</p>
+                    <p class="text-slate-400 text-sm" data-i18n="languages.en.detail">Professional Working Proficiency</p>
+                </div>
+                <div class="flex-1 min-w-[220px] text-center bg-white border border-slate-200 rounded-lg p-6">
+                    <div class="text-4xl mb-3">🇧🇷</div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-1" data-i18n="languages.pt.name">Portuguese</h4>
+                    <p class="text-teal-700 text-sm font-semibold mb-1" data-i18n="languages.pt.level">Native</p>
+                    <p class="text-slate-400 text-sm" data-i18n="languages.pt.detail">First Language</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 md:py-24 bg-white scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="mb-8">
+                <h3 class="serif text-3xl md:text-4xl text-slate-900" data-i18n="contact.title">Get In Touch</h3>
+                <div class="mt-4 h-px w-16 bg-teal-700/40 mx-auto"></div>
+            </div>
+            <p class="text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed" data-i18n="contact.text">
+                I'm currently open to remote QA/SDET opportunities worldwide.
                 Let's discuss how I can add value to your team with my expertise in test automation and quality engineering.
             </p>
-            <div class="flex justify-center gap-6 flex-wrap mb-6">
-                <a href="https://www.linkedin.com/in/erick-garcia-399b2b161/" 
+            <div class="flex justify-center gap-3 flex-wrap mb-8">
+                <a href="https://www.linkedin.com/in/erick-garcia-399b2b161/"
                    target="_blank"
-                   class="px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg transition-all hover:scale-105 flex items-center gap-3 shadow-lg">
-                    <i class="fab fa-linkedin text-xl"></i> Connect on LinkedIn
+                   class="px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white text-sm font-semibold rounded-md transition-colors inline-flex items-center gap-2">
+                    <i class="fab fa-linkedin-in"></i> <span data-i18n="contact.linkedin">Connect on LinkedIn</span>
                 </a>
-                <a href="https://github.com/Erick-oGarcia" 
+                <a href="mailto:erick.garcia.qa@gmail.com"
+                   class="px-6 py-3 border border-slate-300 hover:border-teal-700 text-slate-700 hover:text-teal-700 text-sm font-semibold rounded-md transition-colors inline-flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> <span data-i18n="contact.email">Send Email</span>
+                </a>
+                <a href="https://github.com/Erick-oGarcia"
                    target="_blank"
-                   class="px-8 py-4 border-2 border-teal-600 hover:border-teal-700 text-teal-600 hover:text-teal-700 font-semibold rounded-lg transition-all hover:scale-105 flex items-center gap-3">
-                    <i class="fab fa-github text-xl"></i> View GitHub
+                   class="px-6 py-3 border border-slate-300 hover:border-teal-700 text-slate-700 hover:text-teal-700 text-sm font-semibold rounded-md transition-colors inline-flex items-center gap-2">
+                    <i class="fab fa-github"></i> <span data-i18n="contact.github">View GitHub</span>
                 </a>
             </div>
-            <div class="flex justify-center items-center gap-4 text-gray-600 text-sm flex-wrap">
-                <span class="flex items-center gap-2">
-                    <i class="fas fa-map-marker-alt"></i> Based in Brazil (UTC-3)
+            <div class="flex justify-center items-center gap-3 text-slate-500 text-sm flex-wrap">
+                <span class="inline-flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-slate-400"></i> <span data-i18n="contact.location">Based in Brazil (UTC-3)</span>
                 </span>
-                <span class="text-gray-400">|</span>
-                <span class="flex items-center gap-2">
-                    <i class="fas fa-clock"></i> Flexible with timezones
+                <span class="text-slate-300">|</span>
+                <span class="inline-flex items-center gap-2">
+                    <i class="fas fa-clock text-slate-400"></i> <span data-i18n="contact.tz">Flexible with timezones</span>
                 </span>
-                <span class="text-gray-400">|</span>
-                <span class="flex items-center gap-2 text-emerald-600 font-medium">
-                    <i class="fas fa-circle text-xs animate-pulse"></i> Available for Remote Work
+                <span class="text-slate-300">|</span>
+                <span class="inline-flex items-center gap-2 text-slate-600">
+                    <span class="h-2 w-2 rounded-full bg-teal-600"></span> <span data-i18n="contact.available">Available for Remote Work</span>
                 </span>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-gray-500 border-t border-gray-200 bg-white">
-        <p class="text-sm uppercase tracking-widest">&copy; 2026 Erick Garcia | Quality Engineer</p>
+    <footer class="py-8 text-center text-slate-400 border-t border-slate-200 bg-slate-50">
+        <p class="text-xs uppercase tracking-widest" data-i18n="footer.text">&copy; 2026 Erick Garcia | Quality Engineer</p>
     </footer>
 
-    <script>
-        function updateExperienceCounter() {
-            const startDate = new Date('2021-12-01'); // Start of Prema Internship
-            const currentDate = new Date();
-            
-            let years = currentDate.getFullYear() - startDate.getFullYear();
-            let months = currentDate.getMonth() - startDate.getMonth();
-            
-            if (months < 0) {
-                years--;
-                months += 12;
-            }
-            
-            const counterElement = document.getElementById('experience-counter');
-            if (counterElement) {
-                counterElement.textContent = `${years} Years ${months} Months of Experience`;
-            }
-        }
-        
-        // Run immediately and update periodically if page stays open long (optional, but good practice)
-        updateExperienceCounter();
-    </script>
+    <script src="assets/js/i18n.js"></script>
 
 </body>
-</html>
 </html>
