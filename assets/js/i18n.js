@@ -310,11 +310,18 @@
         var counter = document.getElementById('experience-counter');
         if (counter) counter.textContent = experienceText(lang);
 
+        var cv = document.getElementById('cv-download');
+        if (cv) {
+            cv.setAttribute('href', lang === 'pt'
+                ? 'assets/docs/Erick_Garcia_QA_Automation_Pt.pdf'
+                : 'assets/docs/Erick_Garcia_QA_Automation_En.pdf');
+        }
+
         var ptBtn = document.getElementById('lang-pt');
         var enBtn = document.getElementById('lang-en');
         if (ptBtn && enBtn) {
-            var activeClasses = ['bg-teal-600', 'text-white'];
-            var inactiveClasses = ['text-gray-600', 'hover:text-teal-600'];
+            var activeClasses = ['bg-teal-700', 'text-white'];
+            var inactiveClasses = ['text-slate-500', 'hover:text-teal-700'];
             var active = lang === 'pt' ? ptBtn : enBtn;
             var inactive = lang === 'pt' ? enBtn : ptBtn;
             activeClasses.forEach(function (c) { active.classList.add(c); inactive.classList.remove(c); });
