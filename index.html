@@ -363,6 +363,85 @@
                 <div class="mt-4 h-px w-16 bg-teal-700/40 mx-auto"></div>
             </div>
             <div class="max-w-3xl mx-auto">
+                <div class="bg-white p-6 md:p-8 rounded-lg border border-slate-200 mb-6">
+                    <div class="flex justify-between items-start mb-4 gap-4">
+                        <div>
+                            <h4 class="serif text-xl md:text-2xl font-bold text-slate-900">Caronapass</h4>
+                            <a href="https://caronapass.com.br/" target="_blank" rel="noopener noreferrer" class="text-sm text-teal-700 hover:text-teal-900 transition-colors break-all">caronapass.com.br</a>
+                        </div>
+                        <div class="flex gap-4 text-slate-400 shrink-0 pt-1">
+                            <a href="https://caronapass.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Visit the live product" data-i18n-label="projects.cp.site" class="hover:text-teal-700 transition-colors" title="Visit the live product"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed" data-i18n="projects.cp.desc">A ride-sharing app for university students commuting between towns in the interior of São Paulo. I design, build and ship it solo; it has been in production since January 2026, on the App Store and Google Play, and carries 102 SQL test files, 27 API suites and 59 unit tests in CI (lint → Jest → PostgreSQL → API smoke). It is where I practice quality engineering without a safety net: I set the test strategy, the release gates and the coverage criteria, and I am the one paged when they miss something.</p>
+
+                    <p class="text-slate-600 mb-5 text-sm leading-relaxed" data-i18n="projects.cp.finding">Applying ISTQB CTFL test design techniques, mapping the system's states against the running code surfaced 82 edge cases, including three race conditions where a scheduled job could slip between a read and a write.</p>
+
+                    <p class="text-slate-600 mb-5 text-sm leading-relaxed" data-i18n="projects.cp.ai">Built with an AI-assisted workflow (Claude Code, Cursor, Zed): I specified the architecture, the business rules and the test strategy and reviewed every change, rather than hand-writing the implementation. That is exactly why the verification is independent of the application: around 190,000 lines of generated application and SQL code are held to checks that read the database directly, instead of asking the code whether it is correct.</p>
+
+                    <div class="mb-5 p-4 bg-slate-50 rounded-lg border border-slate-200">
+                        <h5 class="text-slate-900 font-semibold mb-2 text-sm" data-i18n="projects.cp.features">Quality Engineering:</h5>
+                        <ul class="text-slate-600 text-xs space-y-1 list-disc list-outside ml-4">
+                            <li data-i18n="projects.cp.f1">A written six-level test pyramid (lint, unit, database, anonymous API, authenticated API, manual) where each level has an explicit definition of done that must be answered before a release gate closes</li>
+                            <li data-i18n="projects.cp.f2">Cross-layer parity tests: the client-side filter and the database trigger must reach the same verdict on the same input, catching drift that single-layer suites never see</li>
+                            <li data-i18n="projects.cp.f3">Adversarial input testing with zero-width characters, spaced digits and formatting tricks used to smuggle phone numbers, e-mails and documents past PII blocking</li>
+                            <li data-i18n="projects.cp.f4">Requirements traceability end to end: 34 scenario documents tie each business rule to the test that proves it, and every test file cites its rule, spec and migration</li>
+                            <li data-i18n="projects.cp.f5">Coverage matrices that declare the gaps: each scenario states which layer proves which case, and which cases are deliberately left uncovered</li>
+                            <li data-i18n="projects.cp.f6">Race-condition tests on real concurrency: first commit wins, double-booking cleanup, and capacity overflow caught by a database CHECK constraint</li>
+                            <li data-i18n="projects.cp.f7">A scheduled non-functional run with EXPLAIN (ANALYZE, BUFFERS) query-plan checks, and a confidence matrix stating what each layer of evidence does not prove</li>
+                        </ul>
+                    </div>
+
+                    <p class="text-slate-600 mb-5 text-sm leading-relaxed">
+                        <span data-i18n="projects.cp.closing">Source code is private, because it runs a live product with real user data. The product itself is public:</span>
+                        <a href="https://apps.apple.com/br/app/caronapass/id6772529096" target="_blank" rel="noopener noreferrer" class="text-teal-700 hover:text-teal-900 transition-colors">App Store</a> ·
+                        <a href="https://play.google.com/store/apps/details?id=com.caronapass.app" target="_blank" rel="noopener noreferrer" class="text-teal-700 hover:text-teal-900 transition-colors">Google Play</a> ·
+                        <a href="https://caronapass.com.br/" target="_blank" rel="noopener noreferrer" class="text-teal-700 hover:text-teal-900 transition-colors">caronapass.com.br</a>
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">React Native</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Expo</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">TypeScript</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">PostgreSQL</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">SQL Testing</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Jest</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">GitHub Actions</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-lg border border-slate-200 mb-6">
+                    <div class="flex justify-between items-start mb-4 gap-4">
+                        <h4 class="serif text-xl md:text-2xl font-bold text-slate-900">Toolshop Quality Harness</h4>
+                        <div class="flex gap-4 text-slate-400 shrink-0 pt-1">
+                            <a href="https://github.com/Erick-oGarcia/toolshop-quality-harness" target="_blank" rel="noopener noreferrer" aria-label="View Source Code on GitHub" data-i18n-label="projects.tqh.source" class="hover:text-slate-900 transition-colors" title="View Source Code on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-5 text-sm leading-relaxed" data-i18n="projects.tqh.desc">A full-stack quality harness for a self-hosted e-commerce app: UI, API and database checks live in the same Playwright/TypeScript suite. It exists to answer one failure mode: when the application is wrong, tests that only ask the application agree with it.</p>
+
+                    <div class="mb-5 p-4 bg-slate-50 rounded-lg border border-slate-200">
+                        <h5 class="text-slate-900 font-semibold mb-2 text-sm" data-i18n="projects.tqh.features">Key Features:</h5>
+                        <ul class="text-slate-600 text-xs space-y-1 list-disc list-outside ml-4">
+                            <li data-i18n="projects.tqh.f1">Database checks as a source of truth independent from the application, which caught an API returning 200 for products already deleted from the database</li>
+                            <li data-i18n="projects.tqh.f2">Every check is shown failing before it is trusted, with the detection proof committed alongside the tests</li>
+                            <li data-i18n="projects.tqh.f3">Self-calibrating k6 performance gate: the budget is derived from the same machine in the same run, so it holds on a laptop and on a CI runner</li>
+                            <li data-i18n="projects.tqh.f4">Consumer-driven contract with Pact demanding only the five fields the client actually reads</li>
+                            <li data-i18n="projects.tqh.f5">Docker Compose environment and CI running on every pull request</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Playwright</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">TypeScript</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">k6</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Pact</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Docker</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">MySQL</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">Oracle</span>
+                        <span class="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">GitHub Actions</span>
+                    </div>
+                </div>
+
                 <div class="bg-white p-6 md:p-8 rounded-lg border border-slate-200">
                     <div class="flex justify-between items-start mb-4 gap-4">
                         <h4 class="serif text-xl md:text-2xl font-bold text-slate-900">Selenium JavaTestMatrix</h4>

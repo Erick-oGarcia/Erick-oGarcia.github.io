@@ -70,6 +70,18 @@
 <h2>Projects</h2>
 
 <div class="project">
+  <div class="project-name">Caronapass (solo product, in production)</div>
+  <div class="project-links"><a href="https://caronapass.com.br">caronapass.com.br</a><span class="sep">•</span><a href="https://apps.apple.com/br/app/caronapass/id6772529096">App Store</a><span class="sep">•</span><a href="https://play.google.com/store/apps/details?id=com.caronapass.app">Google Play</a></div>
+  <p>A ride-sharing app for university students in the interior of São Paulo, which I design, build and ship solo. In production since January 2026 with 102 SQL test files, 27 API suites and 59 unit tests running in GitHub Actions CI (lint, Jest, PostgreSQL and API smoke stages). Quality is owned end to end: a documented six-level test pyramid with written release gates, requirements traceability from business rule to test across 34 scenario documents, and coverage matrices that declare which cases are deliberately left uncovered.</p>
+  <ul>
+    <li>Applying ISTQB CTFL test design techniques, mapping the system's states against the running code surfaced 82 edge cases, including three race conditions where a scheduled job could slip between a read and a write.</li>
+    <li>Adversarial testing of the PII filter: zero-width characters and spaced digits used to smuggle phone numbers and e-mails past the block, with cross-layer parity asserting that the client filter and the database trigger reach the same verdict.</li>
+    <li>Built with an AI-assisted workflow (Claude Code, Cursor, Zed): I specified the architecture, business rules and test strategy and reviewed every change, rather than hand-writing the implementation. That is why verification is independent of the application: around 190,000 lines of generated application and SQL code are held to checks that read the database directly.</li>
+  </ul>
+  <div class="tech"><b>Stack:</b> <span>React Native | Expo | TypeScript | PostgreSQL | PostGIS | SQL Testing | Jest | GitHub Actions</span></div>
+</div>
+
+<div class="project">
   <div class="project-name">Toolshop Quality Harness (personal project)</div>
   <div class="project-links"><a href="https://github.com/Erick-oGarcia/toolshop-quality-harness">github.com/Erick-oGarcia/toolshop-quality-harness</a></div>
   <p>A full-stack quality harness for a real e-commerce demo app (Toolshop), self-hosted with Docker Compose: UI, API and database checks live in the same Playwright/TypeScript suite, running in GitHub Actions CI. Every check was shown failing before being trusted (docs/detection-proof.md).</p>
