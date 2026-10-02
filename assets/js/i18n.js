@@ -2,7 +2,9 @@
  * Local i18n engine — no external services.
  * Language resolution order:
  *   1. Saved preference (localStorage)
- *   2. Browser language (navigator.language): pt* -> Portuguese, anything else -> English
+ *   2. English — the site's default for every first-time visitor, since the
+ *      audience is international recruiters. Browser language is deliberately
+ *      ignored so a Brazilian visitor also lands on the English version.
  * The PT/EN buttons in the navbar switch languages and persist the choice.
  */
 (function () {
@@ -263,8 +265,7 @@
             var saved = localStorage.getItem('site-lang');
             if (saved === 'pt' || saved === 'en') return saved;
         } catch (e) { /* localStorage unavailable (private mode etc.) */ }
-        var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-        return nav.indexOf('pt') === 0 ? 'pt' : 'en';
+        return 'en';
     }
 
     function experienceText(lang) {
